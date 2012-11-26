@@ -6,3 +6,8 @@ Add datepicker picker to field or to any other element.
 * formats: dd, d, mm, m, yyyy, yy
 * separators: -, /, .
 * multilanguage support (English and Russian only)
+
+= Using bootstrap-datepicker.js =
+
+Call the datepicker via javascript:
+  $('.datepicker').datepicker()
