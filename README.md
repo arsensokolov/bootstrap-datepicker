@@ -10,4 +10,5 @@ Add datepicker picker to field or to any other element.
 = Using bootstrap-datepicker.js =
 
 Call the datepicker via javascript:
-  $('.datepicker').datepicker()
+
+    $('.datepicker').datepicker()
