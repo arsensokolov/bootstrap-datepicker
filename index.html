@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Bootstrap-datapicker : Add datepicker picker to field or to any other element with multilanguage support." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Bootstrap-datapicker</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ArsenBespalov/bootstrap-datapicker">View on GitHub</a>
+
+          <h1 id="project_title">Bootstrap-datapicker</h1>
+          <h2 id="project_tagline">Add datepicker picker to field or to any other element with multilanguage support.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ArsenBespalov/bootstrap-datapicker/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ArsenBespalov/bootstrap-datapicker/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>bootstrap-datapicker</h1>
+
+<p>Add datepicker picker to field or to any other element.</p>
+
+<ul>
+<li>can be used as a component</li>
+<li>formats: dd, d, mm, m, yyyy, yy</li>
+<li>separators: -, /, .</li>
+<li>multilanguage support (English and Russian only)</li>
+</ul><h2>Using bootstrap-datepicker.js</h2>
+
+<p>Call the datepicker via javascript:</p>
+
+<pre><code>$('.datepicker').datepicker()
+</code></pre>
+
+<h3>Options</h3>
+
+<table>
+<tr>
+<th>Name</th>
+        <th>type</th>
+        <th>default</th>
+        <th>description</th>
+    </tr>
+<tr>
+<td>format</td>
+        <td>string</td>
+        <td nowrap>'mm/dd/yyyy'</td>
+        <td>the date format, combination of d, dd, m, mm, yy, yyy.</td>
+    </tr>
+<tr>
+<td>weekStart</td>
+        <td>integer</td>
+        <td>0</td>
+        <td>day of the week start. 0 for Sunday - 6 for Saturday</td>
+    </tr>
+<tr>
+<td>viewMode</td>
+        <td nowrap>string | integer</td>
+        <td>0 = 'days'</td>
+        <td>set the start view mode. Accepts: 'days', 'months', 'years', 0 for days, 1 for months and 2 for years</td>
+    </tr>
+<tr>
+<td>minViewMode</td>
+        <td nowrap>string | integer</td>
+        <td>0 = 'days'</td>
+        <td>set a limit for view mode. Accepts: 'days', 'months', 'years', 0 for days, 1 for months and 2 for years</td>
+    </tr>
+<tr>
+<td>language</td>
+        <td nowrap>string</td>
+        <td>'en'</td>
+        <td>set the language calendar mode. Now support only: 'en' (Englich), 'ru' (Russian)</td>
+    </tr>
+</table><h3>Markup</h3>
+
+<p>Format a component.</p>
+
+<pre><code>&lt;div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy"&gt;
+    &lt;input class="span2" size="16" type="text" value="12-02-2012"&gt;
+    &lt;span class="add-on"&gt;&lt;i class="icon-th"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Methods</h3>
+
+<p><strong>.datapicker(options);</strong>
+Initializes an datepicker.</p>
+
+<p><strong>.datapicker('show');</strong>
+Show the datepicker.</p>
+
+<p><strong>.datapicker('hide');</strong>
+Hide the datepicker.</p>
+
+<p><strong>.datapicker('place');</strong>
+Updates the date picker's position relative to the element</p>
+
+<p><strong>.datapicker('setValue', value);</strong>
+Set a new value for the datepicker. It cand be a string in the specified format or a Date object.</p>
+
+<h3>Events</h3>
+
+<p>Datepicker class exposes a few events for manipulating the dates.</p>
+
+<table width="100%">
+<tr>
+<th>Event</th>
+        <th>Description</th>
+    </tr>
+<tr>
+<td>show</td>
+        <td>This event fires immediately when the date picker is displayed.</td>
+    </tr>
+<tr>
+<td>hide</td>
+        <td>This event is fired immediately when the date picker is hidden.</td>
+    </tr>
+<tr>
+<td>changeDate</td>
+        <td>This event is fired when the date is changed.</td>
+    </tr>
+</table><pre><code>$('#dp5').datapicker()
+    .on('changeDate', function(e) {
+        if (e.date.valueOf() &lt;&gt; startDate.valueOf()) {
+            ....
+        }
+});
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Bootstrap-datapicker maintained by <a href="https://github.com/ArsenBespalov">ArsenBespalov</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
