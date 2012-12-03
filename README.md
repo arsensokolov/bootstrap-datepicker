@@ -1,6 +1,8 @@
 Description
 ====================
 
+This is fork from http://www.eyecon.ro/bootstrap-datepicker/
+
 Add datepicker picker to field or to any other element.
 * can be used as a component
 * formats: dd, d, mm, m, yyyy, yy
