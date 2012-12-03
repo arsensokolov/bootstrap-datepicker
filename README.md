@@ -108,7 +108,7 @@ Datepicker class exposes a few events for manipulating the dates.
     });
 
 
-# Language Translation Complete
+## Language Translation Complete
 <table width="100%">
     <tr>
         <th>Language</th>
