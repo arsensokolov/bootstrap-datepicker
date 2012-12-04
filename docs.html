@@ -6,19 +6,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="Arsen Bespalov">
-		
+
 		<!-- Le style -->
 		<link href="css/prettify.css" rel="stylesheet">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
 		<link href="css/docs.css" rel="stylesheet">
 		<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-		
+
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		
+
 		<!-- Fav and touch icons -->
 		<link rel="shortcut icon" href="ico/favicon.ico">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
@@ -26,17 +26,17 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 	</head>
-	
+
 	<body>
-	
+
 		<!-- Part 1: Wrap all page content here -->
 		<div id="wrap">
-			
+
 			<div class="container">
 				<div class="page-header">
 					<h2>Datepicker for Bootstrap <small>bootstrap-datepicker.js</small></h2>
 				</div>
-				
+
 				<ul class="nav nav-pills">
 					<li><a href="index.html">Home</a></li>
 					<li class="active"><a href="docs.html"><i class="icon-book"></i> Docs</a></li>
@@ -44,20 +44,20 @@
 						<a href="https://github.com/ArsenBespalov/bootstrap-datepicker/archive/master.zip">Download</a>
 					</li>
 				</ul>
-				
+
 				<hr>
-				
+
 				<h3>Exampe</h3>
 				<p>Attached to a field with the format specified via options.</p>
 				<div class="well">
 					<input type="text" class="span2" value="11-30-2012" id="dp1">
 				</div>
-				
+
 				<p>Attachet to a field with the format specified via data tag.</p>
 				<div class="well">
 					<input type="text" class="span2" value="11/30/12" data-date-format="mm/dd/yy" id="dp2">
 				</div>
-				
+
 				<p>As component.</p>
 				<div class="well">
 					<div class="input-append date" id="dp3" data-date="30-11-2012" data-date-format="dd-mm-yyyy">
@@ -65,7 +65,7 @@
 						<span class="add-on"><i class="icon-calendar"></i></span>
 					</div>
 				</div>
-				
+
 				<p>Start with years viewMode.</p>
 				<div class="well">
 					<div class="input-append date" id="dpYears" data-date="30-11-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
@@ -73,7 +73,7 @@
 						<span class="add-on"><i class="icon-calendar"></i></span>
 					</div>
 				</div>
-				
+
 				<p>Limit the view mode to months.</p>
 				<div class="well">
 					<div class="input-append date" id="dpMonths" data-date="11/2012" data-date-format="mm/yyyy" data-date-viewmode="years" data-date-minviewmode="months">
@@ -81,14 +81,14 @@
 						<span class="add-on"><i class="icon-calendar"></i></span>
 					</div>
 				</div>
-				
+
 				<p>Attached to other elment then field and using events to work with the date values.</p>
 				<div class="well">
-					
+
 					<div class="alert alert-error" id="alert">
 						<strong>Oh snap!</strong>
 					</div>
-					
+
 					<table class="table">
 						<thead>
 							<tr>
@@ -103,137 +103,109 @@
 							</tr>
 						</tbody>
 					</table>
-					
+
 				</div>
-				
-				<p>All languages variables.</p>
+
+				<p>Any popular language variables.</p>
 				<div class="well">
-					<div class="input-append date" id="dpLang" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="en">
-						<input class="span2" size="16" type="text" value="15.08.1984" readonly>
-						<span class="add-on"><i class="icon-calendar"></i></span>
-						<select id="ISOLang">
-							<option value="en">[en] English</option>
-							<option value="ab">[ab] Abkhaz</option>
-							<option value="af">[af] Afrikaans</option>
-							<option value="sq">[sq] Albanian</option>
-							<option value="am">[am] Amharic</option>
-							<option value="ar">[ar] Arabic</option>
-							<option value="hy">[hy] Armenian</option>
-							<option value="az">[az] Azeri</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-							<option value="en">[en] English</option>
-						</select>
-					</div>	
+					<table width="100%">
+						<tr>
+							<td>
+								<p>Chinese</p>
+								<div class="input-append date" id="dpZH" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="zh" >
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+							<td>
+								<p>Spanish</p>
+								<div class="input-append date" id="dpES" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="es">
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>English</p>
+								<div class="input-append date" id="dpEN" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="en" >
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+							<td>
+								<p>Arabic</p>
+								<div class="input-append date" id="dpAR" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="ar">
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Hindi</p>
+								<div class="input-append date" id="dpHI" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="hi" >
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+							<td>
+								<p>Portuguese</p>
+								<div class="input-append date" id="dpPT" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="pt">
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Bengali</p>
+								<div class="input-append date" id="dpBN" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="bn" >
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+							<td>
+								<p>Russian</p>
+								<div class="input-append date" id="dpRU" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="ru">
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Japanese</p>
+								<div class="input-append date" id="dpJA" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="ja" >
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+							<td>
+								<p>German</p>
+								<div class="input-append date" id="dpDE" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="de">
+									<input class="span2" size="16" type="text" value="15.08.1984" readonly>
+									<span class="add-on"><i class="icon-calendar"></i></span>
+								</div>
+							</td>
+						</tr>
+					</table>
 				</div>
-				
+
 				<hr>
 				<h3>Using bootstrap-datepicker.js</h3>
 
 			</div>
-			
+
 			<div id="push"></div>
 		</div> <!-- /wrap -->
-		
+
 		<div id="footer">
 			<div class="container">
-				<p class="muted credit">&copy; <a href="http://arsenbespalov.ru" target="_blank">Arsen Bespalov</a> 2012. View this project on <a href="https://github.com/ArsenBespalov/bootstrap-datepicker">GitHub</a>.</p>
+				<p class="muted credit">&copy; Copyright <a href="http://arsenbespalov.ru" target="_blank">Arsen Bespalov</a> 2012. Visit this project on <a href="https://github.com/ArsenBespalov/bootstrap-datepicker">GitHub</a>.</p>
 			</div>
 		</div>
-		
+
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
@@ -251,7 +223,17 @@
 				$('#dp3').datepicker();
 				$('#dpYears').datepicker();
 				$('#dpMonths').datepicker();
-				
+				$('#dpZH').datepicker();
+				$('#dpES').datepicker();
+				$('#dpEN').datepicker();
+				$('#dpAR').datepicker();
+				$('#dpHI').datepicker();
+				$('#dpPT').datepicker();
+				$('#dpBN').datepicker();
+				$('#dpRU').datepicker();
+				$('#dpJA').datepicker();
+				$('#dpDE').datepicker();
+
 				var startDate = new Date(2012,11,26);
 				var endDate = new Date(2012,11,30);
 				$('#dp4').datepicker()
@@ -276,13 +258,6 @@
 						}
 						$('#dp5').datepicker('hide');
 					});
-					
-				$('#dpLang').datepicker();
-				
-				$('#ISOLang').change(function() {
-					var iso = $(this).find('option:selected').val();
-					$('#dpLang').attr('data-date-language', iso);
-				});
 			});
 		</script>
 	</body>
