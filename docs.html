@@ -47,43 +47,92 @@
 
 				<hr>
 
-				<h3>Exampe</h3>
+				<h3>Examples</h3>
 				<p>Attached to a field with the format specified via options.</p>
-				<div class="well">
+				<div class="bs-docs-example">
 					<input type="text" class="span2" value="11-30-2012" id="dp1">
 				</div>
+<pre class="prettyprint linenums">
+&lt;input type="text" class="span2" value="11-30-2012" id="dp1"&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function() {
+	$('#dp1').datepicker({ format: 'mm-dd-yyyy' });
+});
+&lt;/script&gt;</pre>
 
 				<p>Attachet to a field with the format specified via data tag.</p>
-				<div class="well">
+				<div class="bs-docs-example">
 					<input type="text" class="span2" value="11/30/12" data-date-format="mm/dd/yy" id="dp2">
 				</div>
+<pre class="prettyprint linenums">
+&lt;input type="text" class="span2" value="11/30/12" data-date-format="mm/dd/yy" id="dp2"&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function() {
+	$('#dp2').datepicker();
+});
+&lt;/script&gt;</pre>
 
 				<p>As component.</p>
-				<div class="well">
+				<div class="bs-docs-example">
 					<div class="input-append date" id="dp3" data-date="30-11-2012" data-date-format="dd-mm-yyyy">
 						<input class="span2" size="16" type="text" value="30-11-2012" readonly>
 						<span class="add-on"><i class="icon-calendar"></i></span>
 					</div>
 				</div>
+<pre class="prettyprint linenums">
+&lt;div class="input-append date" id="dp3" data-date="30-11-2012" data-date-format="dd-mm-yyyy"&gt;
+	&lt;input class="span2" size="16" type="text" value="30-11-2012" readonly&gt;
+	&lt;span class="add-on"&gt;&lt;i class="icon-calendar"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function() {
+	$('#dp3').datepicker();
+});
+&lt;/script&gt;</pre>
 
 				<p>Start with years viewMode.</p>
-				<div class="well">
+				<div class="bs-docs-example">
 					<div class="input-append date" id="dpYears" data-date="30-11-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
 						<input class="span2" size="16" type="text" value="30-11-2012" readonly>
 						<span class="add-on"><i class="icon-calendar"></i></span>
 					</div>
 				</div>
+<pre class="prettyprint linenums">
+&lt;div class="input-append date" id="dpYears" data-date="30-11-2012" data-date-format="dd-mm-yyyy" data-date-viewmode="years"&gt;
+	&lt;input class="span2" size="16" type="text" value="30-11-2012" readonly&gt;
+	&lt;span class="add-on"&gt;&lt;i class="icon-calendar"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function() {
+	$('#dpYears').datepicker();
+});
+&lt;/script&gt;</pre>
 
 				<p>Limit the view mode to months.</p>
-				<div class="well">
+				<div class="bs-docs-example">
 					<div class="input-append date" id="dpMonths" data-date="11/2012" data-date-format="mm/yyyy" data-date-viewmode="years" data-date-minviewmode="months">
 						<input class="span2" size="16" type="text" value="11/2012" readonly>
 						<span class="add-on"><i class="icon-calendar"></i></span>
 					</div>
 				</div>
+<pre class="prettyprint linenums">
+&lt;div class="input-append date" id="dpMonths" data-date="11/2012" data-date-format="mm/yyyy" data-date-viewmode="years" data-date-minviewmode="months"&gt;
+	&lt;input class="span2" size="16" type="text" value="30-11-2012" readonly&gt;
+	&lt;span class="add-on"&gt;&lt;i class="icon-calendar"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function() {
+	$('#dpMonths').datepicker();
+});
+&lt;/script&gt;</pre>
 
 				<p>Attached to other elment then field and using events to work with the date values.</p>
-				<div class="well">
+				<div class="bs-docs-example">
 
 					<div class="alert alert-error" id="alert">
 						<strong>Oh snap!</strong>
@@ -105,9 +154,65 @@
 					</table>
 
 				</div>
+<pre class="prettyprint linenums">
+&lt;style type="text/css"&gt;
+#alert { display: none; }
+&lt;/style&gt;
+
+&lt;div class="alert alert-error" id="alert"&gt;
+	&lt;strong&gt;Oh snap!&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;table class="table"&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;
+				Start date &lt;a href="#" class="btn btn-small" id="dp4" data-date-format="yyyy-mm-dd" data-date="2012-11-26"&gt;Change&lt;/a&gt;
+			&lt;/th&gt;
+			&lt;th&gt;
+				End date &lt;a href="#" class="btn btn-small" id="dp5" data-date-format="yyyy-mm-dd" data-date="2012-11-30"&gt;Change&lt;/a&gt;
+			&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td id="startDate"&gt;2012-11-26&lt;/td&gt;
+			&lt;td id="endDate"&gt;2012-11-30&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function() {
+	var startDate = new Date(2012,11,26);
+	var endDate = new Date(2012,11,30);
+	$('#dp4').datepicker()
+		.on('changeDate', function(e) {
+			if (e.date.valueOf() > endDate.valueOf()) {
+				$('#alert').show().find('strong').text('The start date can not be greater then the end date');
+			} else {
+				$('#alert').hide();
+				startDate = new Date(e.date);
+				$('#startDate').text($('#dp4').data('date'));
+			}
+			$('#dp4').datepicker('hide');
+		});
+	$('#dp5').datepicker()
+		.on('changeDate', function(e) {
+			if (e.date.valueOf() < startDate.valueOf()) {
+				$('#alert').show().find('strong').text('The end date can not be less then the start date');
+			} else {
+				$('#alert').hide();
+				endDate = new Date(e.date);
+				$('#endDate').text($('#dp5').data('date'));
+			}
+			$('#dp5').datepicker('hide');
+		});
+});
+&lt;/script&gt;</pre>
 
 				<p>Any popular language variables.</p>
-				<div class="well">
+				<div class="bs-docs-example">
 					<table width="100%">
 						<tr>
 							<td>
@@ -191,10 +296,116 @@
 						</tr>
 					</table>
 				</div>
+<pre class="prettyprint linenums">
+&lt;p&gt;Russian&lt;/p&gt;
+&lt;div class="input-append date" id="dpRU" data-date="15.08.1984" data-date-format="dd.mm.yyyy" data-date-language="ru"&gt;
+	&lt;input class="span2" size="16" type="text" value="15.08.1984" readonly&gt;
+	&lt;span class="add-on"&gt;&lt;i class="icon-calendar"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function() {
+	$('#dpRU').datepicker();
+});
+&lt;/script&gt;
+</pre>
 
 				<hr>
 				<h3>Using bootstrap-datepicker.js</h3>
+				<p>Call the datepicker via javascript:</p>
+				<pre class="prettyprint linenums">$('.datepicker').datepicker()</pre>
 
+				<h4>Options</h4>
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Type</th>
+							<th>Default</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>format</td>
+							<td>string</td>
+							<td nowrap>'mm/dd/yyyy'</td>
+							<td>the date format, combination of <span class="label label-info">d</span>, <span class="label label-info">dd</span>, <span class="label label-info">m</span>, <span class="label label-info">mm</span>, <span class="label label-info">yy</span>, <span class="label label-info">yyyy</span></td>
+						</tr>
+						<tr>
+							<td>weekStart</td>
+							<td>integer</td>
+							<td>0</td>
+							<td>day of the week start. 0 for Sunday - 6 for Saturday</td>
+						</tr>
+						<tr>
+							<td>viewMode</td>
+							<td noWrap>string | integer</td>
+							<td>0 = 'days'</td>
+							<td>set the start view mode. Accepts: 'days', 'months', 'years', <span class="badge badge-info">0</span> for days, <span class="badge badge-info">1</span> for months and <span class="badge badge-info">2</span> for years</td>
+						</tr>
+						<tr>
+							<td>minViewMode</td>
+							<td>string | integer</td>
+							<td>0 = 'days'</td>
+							<td>set a limit for view mode. Accepts: 'days', 'months', 'years', <span class="badge badge-info">0</span> for days, <span class="badge badge-info">1</span> for months and <span class="badge badge-info">2</span> for years</td>
+						</tr>
+						<tr>
+							<td>language</td>
+							<td>string</td>
+							<td>'en'</td>
+							<td>set the language locale. Accepts: en — English, ab — Abkhaz, af — Afrikaans, sq — Albanian, am — Amharic, ar — Arabic, hy — Armenian, az — Azeri, be — Belarusian, bn — Bengali, bs — Bosnian, bg — Bulgarian, my — Burmese, ca — Catalan, ce — Chechen, chr — Cherokee, zh — Chinese, cr — Cree, hrv — Croatian, cs — Czech, da — Danish, nl — Dutch, eo — Esperanto, et — Estonian, fo — Faroese, fi — Finnish, fr — French, gl — Galician, ka — Georgian, de — German, el — Greek, ht — Haitian Creole, haw — Hawaiian, he — Hebrew, hi — Hindi, hu — Hungarian, is — Icelandic, io — Ido, id — Indonesian, ia — Interlingua, ga — Irish, it — Italian, ja — Japanese, roa — Jèrriais, krl — Karelian, kk — Kazakh, km — Khmer, ko — Korean, ky — Kyrgyz, lo — Lao, la — Latin, lv — Latvian, lez — Lezgi, lt — Lithuanian, liv — Livonian, jbo — Lojban, lb — Luxembourgish, mk — Macedonian, ms — Malay, ml — Malayalam, mt — Maltese, mn — Mongolian, nv — Navajo, no — Norwegian, nob — Norwegian (Bokmål), nmo — Norwegian (Nynorsk), nov — Novial, oj — Ojibwe, ang — Old English, prg — Old Prussian, os — Ossetian, osd — Ossetian (Digor dialect), osi — Ossetian (Iron dialect), fa — Persian, pl — Polish, pt — Portuguese, ro — Romanian, ru — Russian, sco — Scots, si — Sinhalese, sk — Slovak, sl — Slovene (Slovenian), sr — Serbian, es — Spanish, sv — Swedish, tl — Tagalog, tg — Tajik, ta — Tamil, tt — Tatar, te — Telugu, th — Thai, tpi — Tok Pisin, tr — Turkish, tk — Turkmen, uk — Ukrainian, ur — Urdu, uz — Uzbek, vi — Vietnamese, vo — Volapük, wa — Walloon, cy — Welsh, fy — West Frisian, yi — Yiddish, esu — Yup'ik</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h4>Markup</h4>
+				<p>Format a component.</p>
+<pre class="prettyprint linenums">
+&lt;div class="input-append date" id="dp3" data-date="30-11-2012" data-date-format="dd-mm-yyyy"&gt;
+&lt;input class="span2" size="16" type="text" value="30-11-2012"&gt;
+&lt;span class="add-on"&gt;&lt;i class="icon-th"&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+				<h4>Methods</h4>
+				<p><strong>.datepicker(options)</strong><br>Initializes an datepicker.</p>
+				<p><strong>.datepicker('show')</strong><br>Show the datepicker.</p>
+				<p><strong>.datepicker('hide')</strong><br>Hide the datepicker.</p>
+				<p><strong>.datepicker('place')</strong><br>Updates the date picker's position relative to the element.</p>
+				<p><strong>.datepicker('setValue', value)</strong><br>Set a new value for the datepicker. It cand be a string in the specified format or a Date object.</p>
+
+				<h4>Events</h4>
+				<p>Datepicker class exposes a few events for manipulating the dates.</p>
+				<table class="table table-bordered table-striped">
+					<thead>
+						<tr>
+							<th>Event</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>show</td>
+							<td>This event fires immediately when the date picker is displayed.</td>
+						</tr>
+						<tr>
+							<td>hide</td>
+							<td>This event is fired immediately when the date picker is hidden.</td>
+						</tr>
+						<tr>
+							<td>changeDate</td>
+							<td>This event is fired when the date is changed.</td>
+						</tr>
+					</tbody>
+				</table>
+<pre class="prettyprint linenums">
+$('#dp5').datepicker()
+	.on('changeDate', function(event){
+		if (event.date.valueOf() < startDate.valueOf()){
+			....
+		}
+	});
+</pre>
 			</div>
 
 			<div id="push"></div>
